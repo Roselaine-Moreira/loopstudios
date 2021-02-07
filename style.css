@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 
 body{
   font-family: 'Alata', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   position: relative;
 }
 
@@ -17,7 +19,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   border-top: .1px solid transparent;
-  margin-bottom: 65px;
+  margin-bottom: 68px;
   position: relative;
 }
 .navbar__container{
@@ -75,12 +77,12 @@ body{
 main{
   width: 80%;
   margin: auto;
-  margin-bottom: 65px;
+  margin-bottom: 77px;
 }
 
 #about{
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 68px;
 }
 
 .about__interactive{
@@ -98,16 +100,17 @@ main{
   position: absolute;
   top: 128px;
   left: 49%;
-  padding: 26px;
+  padding: 22px;
   text-align: center;
   background-color: #fff;
+  font-size: 14px;
 }
 
 .creations__header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 68px;
 }
 
 .creations__title{
@@ -206,4 +209,53 @@ main{
 .footer__attribution a{
  text-decoration: none;
  color: hsl(0, 0%, 55%);
+}
+
+/*se a largura do meu browser for no mínino de 687px*/
+/*ou seja se for tela e largura mínima de 45.82em vai mudar os estilos */
+@media screen and (max-width: 45.82em){/*mesma coisa que tela de 687px 687/15=51.2*/
+
+.logo__header {
+  margin-left: 0;
+  height: 30px;
+}
+
+.navbar__items li {
+  padding: 10px 5px;
+}
+
+#navbar{
+  background-position: center center;
+}
+
+.navbar__title {
+  top: 35%;
+}
+
+.navbar__title h1 {
+  padding: 15px 60px 15px 15px;
+}
+
+.about__interactive {
+  width: 400px;
+}
+
+.about__text {
+  font-size: 12px;
+  position: absolute;
+  top: 140px;
+  left: 30%;
+  padding: 28px;
+}
+
+.creations__gallery--itens p {
+  top: 63%;
+  right: 0;
+  left: 5%;
+}
+}
+
+/* 504px */
+@media screen and (max-width: 33.64em){
+
 }
