@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  position: relative;
+}
+
+#navbar{
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: .1px solid transparent;
+  margin-bottom: 68px;
+  position: relative;
+}
+.navbar__container{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.logo__header{
+  margin-left: 76px;
+  height: 30px;
+}
+
+.navbar__items li{
+  display: inline-block;
+  list-style: none;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar__items li:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+
+.navbar__items{
+  text-align: right;
+  align-items: center;
+}
+
+.navbar__icon{
+  display: none;
+}
+
+.navbar__title{
+  position: absolute;
+  top: 32%;
+  left: 12%;
+  width: 50%;
+  display: flex;
+}
+
+.navbar__title h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 156px 15px 15px;
+  letter-spacing: .1em;
+  box-sizing: border-box;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 77px;
+}
+
+#about{
+  position: relative;
+  margin-bottom: 68px;
+}
+
+.about__interactive{
+  width: 60%;
+  height: 300px;
+}
+
+.about__interactive img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.about__text{
+  position: absolute;
+  top: 128px;
+  left: 49%;
+  padding: 22px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.creations__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 68px;
+}
+
+.creations__title{
+  text-transform: uppercase;
+  font-weight: normal;
+  
+}
+
+.creations__btn{
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid black;
+  background: white;
+  padding: 6px 33px;
+}
+
+.creations__gallery{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.creations__gallery--itens{
+  float: left;
+  width: 23%;
+  position: relative;
+}
+
+.creations__gallery--itens img{
+  width: 100%;
+  padding: 0px 0px 15px 0px;
+  box-sizing: border-box;
+}
+.creations__gallery--itens p{
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  top: 75%;
+  right: 23%;
+  left: 25%;
+}
+
+#footer{
+  clear: both;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.footer__conatiner{
+  width: 80%;
+  margin: auto;
+}
+
+.footer__content{
+  clear: both;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.footer__content--itens{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer__content--itens ul{
+  display: flex;
+  font-size: 10px;
+
+}
+
+.footer__content--itens ul li{
+  list-style: none;
+  padding: 0px 10px;
+}
+
+.footer__content--itens ul li:first-child{
+  padding: 0px 10px 0px 0px;
+}
+
+.footer__content--icons img{
+  width: 26px;
+  padding: 5px;
+}
+
+.footer__attribution{
+  color: hsl(0, 0%, 55%);
+  font-size: 10px;
+}
+
+.footer__attribution a{
+ text-decoration: none;
+ color: hsl(0, 0%, 55%);
+}
+
+/*se a largura do meu browser for no mínino de 687px*/
+/*ou seja se for tela e largura mínima de 45.82em vai mudar os estilos */
+@media screen and (max-width: 45.82em){/*mesma coisa que tela de 687px 687/15=51.2*/
+
+.logo__header {
+  margin-left: 0;
+  height: 30px;
+}
+
+.navbar__items li {
+  padding: 10px 5px;
+}
+
+#navbar{
+  background-position: center center;
+}
+
+.navbar__title {
+  top: 35%;
+}
+
+.navbar__title h1 {
+  padding: 15px 60px 15px 15px;
+}
+
+/* .about__interactive {
+  width: 50%;
+} */
+
+.about__text {
+  font-size: 12px;
+  position: absolute;
+  top: 140px;
+  left: 30%;
+  padding: 28px;
+}
+
+.creations__gallery--itens p {
+  top: 63%;
+  right: 0;
+  left: 5%;
+}
+}
+
+/* 504px */
+@media screen and (max-width: 33.64em){
+  .navbar__title {
+    left: 7%;
+    width: 0;
+}
+
+  .navbar__items {
+  display: none;
+  }
+
+  .navbar__icon{
+  display: flex;
+  }
+
+  .about__interactive {
+    width: 100%;
+    }
+}
