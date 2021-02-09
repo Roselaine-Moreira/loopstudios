@@ -104,22 +104,23 @@ main h2{
 #creations{
   width: 90%;
   margin: auto;
-  background-color: blue;
 }
 
 .creations__gallery{
-background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.creations__gallery--itens img{
-width: 100%;
-height: 100%;
+
+.creations__gallery--itens.mobile{
+  width: 100%;
+  height: 100%;
 }
 
 .creations__gallery--itens{
   position: relative;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .creations__gallery--itens p{
@@ -130,4 +131,68 @@ height: 100%;
   font-size: 18px;
   width: 87px;
   text-transform: uppercase;
+}
+
+.creations__btn{
+  display: none;
+}
+
+.creations__btn--end{
+  text-transform: uppercase;
+  background: #fff;
+  border: 2px solid #000;
+  padding: 8px 40px;
+  letter-spacing: .1em;
+}
+
+/* Footer */
+#footer{
+  width: 100%;
+  margin: auto;
+  padding: 32px;
+  background-color: #000;
+}
+
+.footer__logo{
+  padding: 20px;
+}
+
+.footer__container{
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__content--itens{
+  display: contents;
+}
+
+.footer__content--itens ul{
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.footer__content--itens li{
+  padding: 8px;
+}
+
+.footer__content--icons ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer__content--icons li{
+  padding: 10px;
+}
+
+.footer__attribution{
+  color:hsl(0, 0%, 41%);
+  text-align: center;
+}
+
+.footer__attribution a{
+  color:hsl(0, 0%, 41%);
+  text-decoration: none;
 }
