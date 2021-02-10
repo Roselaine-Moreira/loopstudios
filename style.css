@@ -34,6 +34,7 @@ body{
 .navbar__items{
   display: none;
 }
+
 .navbar__title{
   margin: auto;
   width: 80%;
@@ -209,10 +210,14 @@ main h2{
     color: #fff;
   }
   .navbar__items li{
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 2px;
   }
 
-
+  .navbar__items li:hover{
+    background-color: blue;
+  }
+ 
   /* Seções */
   #about{
     margin-bottom: 75px;
