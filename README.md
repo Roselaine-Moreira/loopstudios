@@ -13,3 +13,8 @@ Este desafio se concentra principalmente em HTML e CSS.
 
 Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositivo.
 
+## Resultado
+Futuramente será refatorado o código para diminuir a quantidade de elementos utilizados.
+Atualmente a página está conforme a imagem abaixo:
+
+![Uploading screencapture-127-0-0-1-5500-index-html-2021-02-10-10_14_29.png…]()
