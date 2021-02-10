@@ -120,13 +120,11 @@ main h2{
   width: 87px;
   text-transform: uppercase;
 }
-.creations__gallery--itens.desktop{
-  display: none;
-}
-
+.creations__gallery--itens.desktop,
 .creations__btn{
   display: none;
 }
+
 .creations__btn--end{
   text-transform: uppercase;
   background: #fff;
@@ -154,7 +152,8 @@ main h2{
   align-items: center;
 }
 
-.footer__content--itens{
+.footer__content--itens,
+.footer__social{
   display: contents;
 }
 
@@ -188,15 +187,12 @@ main h2{
   text-decoration: none;
 }
 
-.footer__social{
-  display: contents;
-}
-
-
 
 /* Tela 589px */
 @media screen and (min-width: 39.33em){
-  .navbar__icon{
+  .navbar__icon,
+  .creations__gallery--itens.mobile,
+  .creations__btn--end{
     display: none;
   }
 
@@ -234,7 +230,7 @@ main h2{
     top: 24%;
     left: 81%;
     width: 90%;
-    padding: 23px;
+    padding: 31px;
     font-size: 13px;
   }
   .about__text p{
@@ -265,10 +261,6 @@ main h2{
     left: 24%;
   }
 
-  .creations__gallery--itens.mobile{
-    display: none;
-  }
-
   .creations__gallery--itens.desktop{
     display: inline-block;
     padding-left: 12px;
@@ -280,11 +272,7 @@ main h2{
     align-items: center;
     margin-bottom: 40px;
   }
-  
-  .creations__btn--end{
-    display: none;
-  }
-  
+
   .creations__btn{
     display: block;
     text-transform: uppercase;
@@ -304,16 +292,12 @@ main h2{
     margin: auto;
   }
 
-  .footer__content--itens{
+  .footer__content--itens, .footer__logo ul{
     display: flex;
   }
 
   .footer__logo{
     margin-right: 90px;
-  }
-
-  .footer__logo ul{
-    display: flex;
   }
 
   .footer__social{
@@ -349,11 +333,11 @@ main h2{
     width: 33%;
   }
   .about__text{
-    padding: 30px;
+    padding: 45px;
   }
   .about__text p{
-    margin-bottom: 52px;
-  } 
+    margin-bottom: 40px;
+  }
 
   .footer__logo {
     margin-right: 160px;
@@ -362,4 +346,22 @@ main h2{
   .footer__attribution{
   text-align: right;
   }
+}
+
+@media screen and (min-width:1020px){
+  .about__text p{
+    margin-bottom: 65px;
+  }
+}
+
+
+/* 1400px */
+@media screen and (min-width: 1400px){
+  .about__text {
+  top: 54%;
+  }
+
+.footer__logo {
+  margin-right: 760px;
+}
 }
