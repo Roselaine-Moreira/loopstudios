@@ -17,4 +17,4 @@ Visualize o layout ideal para o site, dependendo do tamanho da tela do dispositi
 Futuramente será refatorado o código para diminuir a quantidade de elementos utilizados.
 Atualmente a página está conforme a imagem abaixo:
 
-![Uploading screencapture-127-0-0-1-5500-index-html-2021-02-10-10_14_29.png…]()
+![loopstudios](https://user-images.githubusercontent.com/49179422/107557319-3575d000-6bb8-11eb-91df-3f7b0a3d367f.png)
