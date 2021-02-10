@@ -201,7 +201,7 @@ main h2{
   text-decoration: none;
 }
 
-.b{
+.footer__social{
   display: contents;
 }
 
@@ -313,35 +313,29 @@ main h2{
 
   #footer{
     clear: both;
-    margin: 0;
     padding: 0;
   }
 
   .footer__container{
     width: 90%;
     margin: auto;
-    /* display: flex;
-    flex-direction: none;
-    align-items: 0; */
   }
 
   .footer__content--itens{
     display: flex;
-    justify-content: space-between;
   }
 
   .footer__logo{
-    margin-right: 160px;
+    margin-right: 90px;
   }
 
   .footer__logo ul{
     display: flex;
   }
 
-  .b{
+  .footer__social{
     display: flex;
     flex-direction: column;
-    position: relative;
     padding: 20px;
   }
 
@@ -351,9 +345,8 @@ main h2{
   }
 
   .footer__content--icons ul{
-  list-style: none;
   display: flex;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   }
 
   .footer__content--itens li {
@@ -377,6 +370,10 @@ main h2{
   .about__text p{
     margin-bottom: 52px;
   } 
+
+  .footer__logo {
+    margin-right: 160px;
+  }
 
   .footer__attribution{
   text-align: right;
